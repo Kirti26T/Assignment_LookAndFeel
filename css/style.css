@@ -273,6 +273,7 @@ h2 {
 	width: 60%;
 	padding: 10px;
 
+
 }
 
 #address {
@@ -282,10 +283,21 @@ h2 {
 
 }
 #footer {
-	background-color: #333;
-	
-	padding: 6px;
+	background-color: #333;	
+	padding: 12px;
 	text-align: right;
 	color: white;
+}
+
+.footer_bottom {
+position: absolute;
+right: 0;
+bottom: 0;
+left: 0;
+padding: 6px;
+background-color: #efefef;
+text-align: right;
+background-color: #333;
+color: white;
 }
 
