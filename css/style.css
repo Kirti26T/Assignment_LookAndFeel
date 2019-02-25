@@ -1,0 +1,274 @@
+/*
+<!------Author: David Lam,Kirti Tiwari,Vidya Sagar Gunnala----->
+<!------UID: U00959333,U09448090,U21206982-------->
+<!------Date: 2/22/2019------->
+<!------Assigment 3: Web look and feel------->
+<!------style.css------->
+*/
+
+/*---header, page---*/ 
+header, page {
+	background-color: black;
+
+}
+
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body,
+html {
+  height: 100%;
+}			
+
+/*---------------Navigation Bar--------------------*/
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;},
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+
+/*----------------Container------------------*/
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 180%;
+}
+
+.header-img {
+  width: 100%;
+  display: block;
+  max-width: none;
+ }
+ 
+.mySlides {display:none;}
+
+/*------------------column-----------------*/
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+  position: center;
+  font-size: 110%;
+}
+
+.column h1{
+	  text-align: center;
+	  margin: 0;
+	  color: maroon;
+}	  
+
+.column h3{
+	  margin: 0;
+}	
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*-----Style the footer-----*/
+
+ul.square {
+  list-style-type: square;
+  list-style-position: inside;
+  color: black;
+}
+
+/*------address_section-----*/
+.address_section{
+	margin: 0;
+	background-color: #FFFFBD;
+	/*ackground-image: url("address_background.png");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;*/
+}
+
+.address_section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.address_section:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.address{
+	margin: 0;
+	background-color: white;
+	text-align: center;
+	color: black;
+	background-color: #FFFFBD;
+}
+
+/*------------Style the footer------------*/
+.footer {
+  background-color: #333;
+  padding: 6px;	
+  text-align: right;
+  color:  white;
+}
+
+/*--------column h2-----------*/
+div.column h2 {
+	background: #4CAF50;
+    margin: 0;
+}
+
+
+
+/*---------extra styles in case of use-----------*/  
+/*-----------------------------------------------*/  
+.full_image{
+  /* Full height */
+  height: 75vh; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}  
+  
+/*center-fit for image*/
+.center-fit {
+            max-width: 100%;
+            max-height: 75vh;
+            margin: auto;
+        }
+
+.text_center{
+	text-align = center;
+}
+
+
+div.text_center {
+  text-align: center;
+}
+
+/*---------------------------------------------------*/
+/*----------additional style for Menu Page-----------*/
+
+/*----------Style for Menu headers----------*/
+.h8 {
+  color: darkgreen;
+  text-align: center;
+  font-style: italic;
+  font-family: Times New Roman;
+  font-size : 200%;
+}
+
+/*----------back ground image style--------*/
+.bgstyle {
+  
+  background-color: linen;
+  opacity: 0.80;
+  }
+  
+/*--------Style for Menu items----------*/
+.menu dt {
+ font-weight: bold;
+ font-family: Trebuchet MS;
+ font-size:100%;
+}
+.menu dd {
+ margin: 1%;
+ padding: 0;
+ font-family: Georgia;
+ font-size:100%;
+ }
+
+/*----------additional style for Contact Page-----------*/
+
+#container {
+	background-image: url("../img/Image4.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 50%:
+	margin: 0px;
+	padding: 10px;
+	background-color: ;
+}
+
+#header_contact {
+	width: 100%;
+	height: 10px;
+	text-align: center;
+}
+
+#main_contact {
+	width: 100%;
+	height: 300px;
+	text-align: center;
+}
+
+h2 {
+	margin: 100px;
+	color: ;
+}
+
+#note {
+	float: left;
+	width: 60%;
+	padding: 10px;
+}
+
+#address {
+	float: right;
+	width: 30%;
+	padding: 10px;
+}
+

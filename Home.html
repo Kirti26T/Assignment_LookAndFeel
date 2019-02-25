@@ -1,0 +1,148 @@
+<!------Author: David Lam,Kirti Tiwari,Vidhya Sagar Gunnala----->
+<!------UID: U00959333,U09448090,U21206982-------->
+<!------Date: 2/22/2019------->
+<!------Assigment 3: Web look and feel------->
+<!------Home.html------->
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+<!-- head -->	
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> ISM6225 Group2</title>
+	<link rel = "stylesheet" type = "text/css" href = "./css/style.css" />
+</head> <!-- end head -->	
+
+<body>
+
+	<!-- page -->	
+	<div id="page">
+
+	<!-------------------------------------------------------------------------------------------------------------------------------------------->
+	<!-------------------------------------------------------------------------------------------------------------------------------------------->
+	<!-- header -->	
+	<header id="header">
+		<!-- Navigation bar -->	
+		<ul class="topnav">
+		  <li><a class="active" href="Home.html">Home</a></li>
+		  <li><a href="Menu.html">Menu</a></li>
+		  <li><a href="Contact.html">Contact</a></li>
+		  <li    class="right"><a href="https://github.com/Kirti26T/Assignment_LookAndFeel">Github</a></li>
+		</ul>  <!-- end Navigation bar -->
+        
+		<!-- container -->	
+		<div class="container"> 
+			
+		   <div class="centered" ><br>  BULLS DEN 
+		   <br><br>
+		   Hibachi Grille &#8211; Sushi Bar &#8211; Liquor &amp; Sake Lounge 
+		   </div>
+		   <img class="mySlides header-img" src="./img/sashimi.jpg" alt="" /> 
+		   <img class="mySlides header-img" src="./img/sashimi_1.jpg" alt="" /> 
+		   <img class="mySlides header-img" src="./img/sashimi_2.jpg" alt="" /> 
+		</div> <!-- end container -->	
+		
+		<!-- JS for automatic slideshow of images -->	 
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 2000); // Change image every 2 seconds
+			}
+		</script>  <!-- end script -->	 
+	</header>	<!-- end header -->	
+
+	<!-------------------------------------------------------------------------------------------------------------------------------------------->
+	<!-------------------------------------------------------------------------------------------------------------------------------------------->
+	
+    <!-- main -->	
+	<main> 
+		<!-- row -->	
+		<div class="row">
+			  <!-- column1 -->	
+			  <div class="column " style="background-color:#8c8c8c;">
+					<h1> Happy Hour</h1>
+					<h3> Sushi </h3>
+					<ul class="square">
+					  <li>$1 Nigiri</li>
+					  <li>$2 Sashimi</li>
+					  <li>$3 Classic Roll</li>
+					</ul>
+					
+					<h3> Drinks </h3>
+					<ul class="square move_center">
+					  <li>$2 Domestic Beer</li>
+					  <li>$3 Import Beers</li>
+					  <li>$4 House Wines</li>
+					</ul>
+			  </div> <!-- end column1 -->	
+			  
+			  <!-- column2 -->	
+			  <div class="column" style="background-color:#999999;">
+					<h1> Teppanyaki Lunch</h1>
+					<h3> Seafood </h3>
+					<ul class="square">
+					  <li>$8.95 White Fish </li>
+					  <li>$9.95 Scallop </li>
+					  <li>$8.95 Shrimp </li>
+					</ul>
+					
+					<h3> Meat </h3>
+					<ul class="square">
+					  <li>$9.95 Sirloin </li>
+					  <li>$8.95 Chicken </li>
+					  <li>$9.95 NY Strip </li>
+			  </div> <!-- end column2 -->	
+			  
+			  <!-- column3 -->	
+			  <div class="column" style="background-color:#a6a6a6;">
+					<h1> Teppanyaki Dinner</h1>
+					<h3> Favorite Dish </h3>
+					<ul class="square">
+					  <li>$15.95 Filet Mignon</li>
+					  <li>$13.95 Lobster Tail </li>
+					  <li>$14.95 Tuna </li>
+					</ul>
+					
+					<h3> Combination </h3>
+					<ul class="square">
+					  <li>$18.95 Filet Mignon & Scallop </li>
+					  <li>$17.95 Salmon & Shrimp </li>
+					  <li>$21.95 NY Strip & Lobster Tail </li>
+					</ul>
+			  </div> <!-- end column3 -->	
+		</div> <!-- end row -->	
+		
+		<!-- address_section -->	
+		<div class = "address_section">
+			<div class = "address"> <!-- address -->	
+				<h1>HOURS OF OPERATION </h1>
+				<p>Mon-Fri: 10AM - 10PM</p>
+				<p>Saturday: 11AM - 10PM</p>
+				<p>Sunday: 11AM - 9PM</p>
+				
+				<p>Call us today: (850) 849 8289 </p>
+				<p>Address : 4202 E Fowler Ave, Tampa, FL 33620</p>
+			</div> <!-- end address -->	
+		</div> <!-- end address_section -->
+		
+		<!-- footer -->	
+		<div class="footer">
+		  <p>Copyright &copy; 2019 USF ISM6225 Group2. All Rights Reserved.</p>
+		</div>	 <!-- end footer -->	
+	</main> <!--end main -->
+	</div> <!-- end page -->	
+</body> <!--end body -->
+</html>
